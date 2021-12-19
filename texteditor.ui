@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>texteditor</class>
+ <widget class="QMainWindow" name="texteditor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>349</width>
+    <height>278</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>texteditor</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>23</x>
+      <y>20</y>
+      <width>281</width>
+      <height>181</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="Menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>349</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File   </string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_As"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionCut"/>
+    <addaction name="actionCopy"/>
+    <addaction name="actionPaste"/>
+    <addaction name="actionUndo_Ctrl_Z"/>
+    <addaction name="actionRedo_Ctrl_Y"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+    <addaction name="actionAbout_Qt"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew"/>
+   <addaction name="actionOpen"/>
+   <addaction name="actionSave"/>
+   <addaction name="actionCut"/>
+   <addaction name="actionCopy"/>
+   <addaction name="actionPaste"/>
+  </widget>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/new/prefix1/New.png</normaloff>:/new/prefix1/New.png</iconset>
+   </property>
+   <property name="text">
+    <string>New                   Ctrl+N </string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/new/prefix1/Open.png</normaloff>:/new/prefix1/Open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open                    Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/new/prefix1/save.png</normaloff>:/new/prefix1/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save                          Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionSave_As">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/new/prefix1/save as.png</normaloff>:/new/prefix1/save as.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save As                    Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/new/prefix1/exit.png</normaloff>:/new/prefix1/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit                    Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionCut">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/new/prefix1/cut.png</normaloff>:/new/prefix1/cut.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cut                    Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/new/prefix1/copy.png</normaloff>:/new/prefix1/copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copy                    Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/new/prefix1/paste.png</normaloff>:/new/prefix1/paste.png</iconset>
+   </property>
+   <property name="text">
+    <string>Paste                    Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/new/prefix1/about.png</normaloff>:/new/prefix1/about.png</iconset>
+   </property>
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionAbout_Qt">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/new/prefix1/about qt.png</normaloff>:/new/prefix1/about qt.png</iconset>
+   </property>
+   <property name="text">
+    <string>About Qt</string>
+   </property>
+  </action>
+  <action name="actionUndo_Ctrl_Z">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/new/prefix1/Undo_Ctrl_Z.png</normaloff>:/new/prefix1/Undo_Ctrl_Z.png</iconset>
+   </property>
+   <property name="text">
+    <string>Undo                    Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actionRedo_Ctrl_Y">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/new/prefix1/Redo_Ctrl_Y.png</normaloff>:/new/prefix1/Redo_Ctrl_Y.png</iconset>
+   </property>
+   <property name="text">
+    <string>Redo                    Ctrl+Y</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="icones.qrc"/>
+ </resources>
+ <connections/>
+</ui>
